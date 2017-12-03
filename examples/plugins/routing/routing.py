@@ -8,7 +8,8 @@ def rules(alert, plugins):
     if alert.is_blackout():
         return [
             plugins['reject'],
-            plugins['geoip']
+            plugins['geoip'],
+            plugins['blackout']
         ]
     else:
         if alert.severity in ['critical', 'major', 'ok']:
