@@ -52,6 +52,9 @@ KEYCLOAK_URL = None
 KEYCLOAK_REALM = None
 ALLOWED_KEYCLOAK_ROLES = ['*']
 
+DEX_URL = None
+ALLOWED_DEX_ROLES = ['*']
+
 SAML2_CONFIG = None
 ALLOWED_SAML2_GROUPS = ['*']
 SAML2_USER_NAME_FORMAT = '{givenName} {surname}'
@@ -64,7 +67,7 @@ CORS_ORIGINS = [
     # 'http://try.alerta.io',
     # 'http://explorer.alerta.io',
     'http://localhost',
-    'http://localhost:8000'
+    'http://localhost:8000',
 ]
 CORS_SUPPORTS_CREDENTIALS = AUTH_REQUIRED
 

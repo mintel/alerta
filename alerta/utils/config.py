@@ -86,6 +86,13 @@ class Config(object):
         if 'ALLOWED_KEYCLOAK_ROLES' in os.environ:
             config['ALLOWED_KEYCLOAK_ROLES'] = os.environ['ALLOWED_KEYCLOAK_ROLES'].split(',')
 
+
+        if 'DEX_URL' in os.environ:
+            config['DEX_URL'] = os.environ['DEX_URL']
+
+        if 'ALLOWED_DEX_ROLES' in os.environ:
+            config['ALLOWED_DEX_ROLES'] = os.environ['ALLOWED_DEX_ROLES'].split(',')
+
         if 'CORS_ORIGINS' in os.environ:
             config['CORS_ORIGINS'] = os.environ['CORS_ORIGINS'].split(',')
 
